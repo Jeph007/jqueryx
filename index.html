@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <style>
+
+    img {
+      max-width: 70%;
+    }
+
+    .image-center {
+      display: block;
+      margin: 10px auto;
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1 id="title" class="text-center">Welcome to my website.</h1>
+  <div class="row">
+    <article class="col-sm-8">
+      <p>My website is very important because I have many important things
+        to say. Here is a picture of a puppy in a cup: </p>
+      <img src="pup-in-cup.jpg" alt="Puppy in Cup">
+      <!-- Rest of the content -->
+    </article>
+    <aside class="col-sm-4">
+      <h4>I love lists. Here's why.</h4>
+      <ol>
+        <li>Sometimes they're numbered, and numbers are great.</li>
+        <li>Sometimes they're not, and that's okay too.</li>
+        <li>I don't have the attention span to read paragraphs.</li>
+        <li>Hey look, there's a puppy!</li>
+      </ol>
+    </aside>
+  </div>
+  <div class="row mb-5">
+    <div class="col-sm-4">
+      Red
+      <input class="form-control" type="number" name="red" min="0" max="255" value="255">
+    </div>
+    <div class="col-sm-4">
+      Blue
+      <input class="form-control" type="number" name="green" min="0" max="255" value="255">
+    </div>
+    <div class="col-sm-4">
+      Green
+      <input class="form-control" type="number" name="blue" min="0" max="255" value="255">
+    </div>
+  </div>
+
+<form id="movie-form">
+  <input type="text" id="title-input" placeholder="Title">
+  <input type="number" id="rating-input" min="0" max="10" placeholder="Rating">
+  <button id="submit-button" type="submit">Submit</button>
+</form>
+<div id="movies-list"></div>
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js"></script>
+</body>
+</html>
